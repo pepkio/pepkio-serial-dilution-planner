@@ -1,0 +1,23 @@
+{
+  "upload_type": "software",
+  "access_right": "open",
+  "title": "pepkio-serial-dilution-planner v0.1.2 – a Python client for pipette-aware serial dilution planning via the Pepkio life-science calculator suite",
+  "description": "Frozen releases of **pepkio-serial-dilution-planner** furnish a citable programmatic bioinformatics tool for geometric dilution series in molecular biology, biochemistry, and cell-based assays—delegating protocol computation to the hosted Pepkio calculator API while pinning the client version used in each study. This Zenodo record preserves v0.1.2 of the open-source lab calculator API wrapper so peers can replicate exact API interactions in reproducible calculation pipelines. Source code and the issue tracker are maintained at https://github.com/pepkio/pepkio-serial-dilution-planner. The primary interactive platform for the same calculations is the [Pepkio Serial Dilution Planner](https://www.pepkio.com/tools/serial-dilution-planner), part of a Pepkio suite of more than thirty web tools covering solution prep, PCR, cell culture, assays, pharmacology, education, and sequence utilities. The Python client supports batch processing and integration with Jupyter, Nextflow, and Snakemake without embedding calculator logic locally. Released under the MIT License; Pepkio (https://www.pepkio.com/) develops laboratory calculators and analysis services for life science research.",
+  "notes": "**Suggested citation.** When referencing the archived client in a publication, cite the Zenodo DOI together with the GitHub repository (https://github.com/pepkio/pepkio-serial-dilution-planner) and record the client version (v0.1.2) in methods or supplementary materials.\n\n**Programmatic access.** This client is the recommended interface for scripted calls to the Pepkio Serial Dilution Planner API; the interactive web application remains available for manual planning. Calculator logic resides on Pepkio servers; this package transmits parameters and returns structured results only.",
+  "version": "0.1.2",
+  "license": "mit",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Pepkio",
+      "affiliation": "Pepkio"
+    }
+  ],
+  "keywords": [
+    "Python client for lab calculators",
+    "serial dilution",
+    "bioinformatics",
+    "reproducible research",
+    "programmatic bioinformatics tools"
+  ]
+}
