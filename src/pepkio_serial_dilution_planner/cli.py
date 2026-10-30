@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Command-line interface for pepkio-serial-dilution-planner."""
 
 from __future__ import annotations

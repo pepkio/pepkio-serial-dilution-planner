@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """HTTP client for the Pepkio serial-dilution-planner tool."""
 
 from __future__ import annotations

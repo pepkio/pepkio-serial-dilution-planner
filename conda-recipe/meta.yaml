@@ -1,0 +1,53 @@
+{% set name = "pepkio-serial-dilution-planner" %}
+{% set version = "0.1.2" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/ee/e1/778cfca4e8001665c4bf938bb31e3a880feb51fb82dc2b420802c930eeb7/pepkio_serial_dilution_planner-{{ version }}.tar.gz
+  sha256: 912a63667f27f72637ed5a018365efc1c2035b481a260fa1380ac185c77a99b9
+
+build:
+  noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  entry_points:
+    - pepkio-serial-dilution-planner = pepkio_serial_dilution_planner.cli:main
+
+requirements:
+  host:
+    - python >=3.11
+    - pip
+    - hatchling
+  run:
+    - python >=3.11
+    - click >=8.4.1
+    - httpx >=0.28.1
+    - pydantic >=2.13.4
+
+test:
+  imports:
+    - pepkio_serial_dilution_planner
+  commands:
+    - pip check
+    - pepkio-serial-dilution-planner --help
+
+about:
+  home: https://www.pepkio.com/tools/serial-dilution-planner
+  license: MIT
+  summary: Conda client for Pepkio pipette-aware serial dilution protocols via REST API
+  description: |
+    pepkio-serial-dilution-planner is a Python package for conda and mamba environments
+    that calls the Pepkio Serial Dilution Planner API. It returns step-by-step dilution
+    protocols with pipette-rounded transfer volumes, optional microplate maps, and
+    shareable run links. Calculator logic is hosted on Pepkio servers; runs require
+    a network connection and API key.
+  doc_url: https://www.pepkio.com/tools/serial-dilution-planner
+  dev_url: https://github.com/pepkio/pepkio-serial-dilution-planner
+  doc_source_url: https://github.com/pepkio/pepkio-serial-dilution-planner
+
+extra:
+  recipe-maintainers:
+    - pepkio

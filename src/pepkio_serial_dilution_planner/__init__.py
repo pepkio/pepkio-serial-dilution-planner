@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Python client for Pepkio serial-dilution-planner."""
 
 from .client import PepkioClient
