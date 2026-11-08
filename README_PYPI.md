@@ -72,7 +72,7 @@ Manifest inspection does not require an API key.
 
 # Scientific Background
 
-In a constant-ratio serial dilution, each step uses the same dilution factor DF = Cᵢ / Cᵢ₊₁. After n steps from initial concentration C₀, the concentration is Cₙ = C₀ / DFⁿ.
+In a constant-ratio serial dilution, each step uses the same dilution factor DF = C_i / C_{i+1}. After n steps from initial concentration C_0, the concentration is C_n = C_0 / DF^n.
 
 When the total dilution is large, one step may need a transfer volume below the pipette minimum or above its maximum. Splitting into multiple serial steps keeps each transfer pipettable and improves mixing.
 
@@ -97,3 +97,5 @@ Pepkio develops software tools and provides bioinformatics analysis services for
 # Keywords
 
 serial dilution, serial dilution calculator, serial dilution planner, dilution factor, dilution series, logarithmic dilution, geometric dilution, C1V1=C2V2, concentration dilution, mM to uM dilution, micromolar dilution, standard curve preparation, ELISA standard curve, qPCR dilution, qPCR standard curve, dose response dilution, antibody dilution, protein dilution, pipette volume calculator, pipette-aware dilution, transfer volume, diluent volume, 96-well plate map, 384-well plate map, microplate dilution layout, laboratory dilution protocol, serial dilution protocol, ten-fold serial dilution, stock solution dilution, working solution preparation, molecular biology calculator, pepkio-serial-dilution-planner, Python dilution API, lab automation dilution, economy mode dilution, mass to molar conversion, mg/mL to uM, pipette rounding, high-throughput dilution plate, how to perform a serial dilution in the lab, how to calculate serial dilution step volumes, serial dilution from mM to uM calculator, how many steps for 1000 fold dilution, how to make a 10-fold serial dilution, how to prepare ELISA standard curve by serial dilution, qPCR template serial dilution protocol, how to map serial dilution to 96 well plate, 384 well serial dilution layout, pipette volume too small for serial dilution, round microliter volumes to P20 pipette, what is dilution factor in serial dilution, antibody serial dilution from mg/mL, convert mg per mL to micromolar for dilution, standard curve log spacing dilution factor, shareable lab protocol link dilution, printable serial dilution worksheet, minimize reagent use serial dilution, auto expand dilution steps large concentration range, Python script serial dilution protocol, API for laboratory dilution planning, serial dilution for inhibitor titration, immunoassay dilution series planning, dose response serial dilution 96 well, how to dilute stock for standard curve qPCR, export plate map CSV serial dilution
+
+A semantic, AI-native version of this document in the K2F format is available at https://k2f.dev (https://k2f.dev/v/e74f8aeb8b380300466e16345e6f80c69249c08293c8d09dfbc4a3aacef300aa)

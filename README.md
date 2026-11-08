@@ -235,7 +235,7 @@ The `permalink` field links to a saved run that colleagues can open in the brows
 
 For a single dilution, mass of solute is conserved:
 
-**C₁V₁ = C₂V₂**
+**C1V1 = C2V2**
 
 where C is concentration and V is volume. If you know any three of initial concentration, final concentration, initial volume, and final volume, you can solve for the fourth. This relation applies to one mixing step, not an entire multi-tube serial series without accounting for each transfer.
 
@@ -243,13 +243,13 @@ where C is concentration and V is volume. If you know any three of initial conce
 
 In a **constant-ratio serial dilution**, each step uses the same dilution factor DF (often 10 for a “10-fold serial dilution”):
 
-**DF = Cᵢ / Cᵢ₊₁**
+**DF = C_i / C_{i+1}**
 
-After n identical serial steps from initial concentration C₀:
+After n identical serial steps from initial concentration C_0:
 
-**Cₙ = C₀ / DFⁿ**
+**C_n = C_0 / DF^n**
 
-The total fold-change from stock to final tube is DFⁿ. For a 1000× total dilution with DF = 10 per step, you need n = 3 serial transfers (10³ = 1000).
+The total fold-change from stock to final tube is DF^n. For a 1000× total dilution with DF = 10 per step, you need n = 3 serial transfers (10³ = 1000).
 
 ## Why use multiple serial steps?
 
@@ -261,9 +261,9 @@ ELISA, qPCR, and many binding assays use a **standard curve**: a set of known co
 
 ## Molar and mass units
 
-Molar concentration (mol/L) relates to mass concentration through the compound’s molar mass Mᵣ (g/mol):
+Molar concentration (mol/L) relates to mass concentration through the compound’s molar mass M_r (g/mol):
 
-**C_molar = C_mass / Mᵣ**
+**C_molar = C_mass / M_r**
 
 (with consistent units). When stock is in mg/mL and targets are in molar units, provide `molecular_weight_g_per_mol` so the planner converts consistently.
 
@@ -279,7 +279,7 @@ Serial dilution is a method where each step dilutes the previous solution into f
 
 ### How do I calculate dilution factor?
 
-For one serial step, dilution factor DF = C_before / C_after. For constant-ratio series, DF is the same at every step. Total fold-change after n steps is DFⁿ. Example: 10 mM to 10 µM is a 1000× total change; with DF = 10 per step, three serial steps achieve 10³ = 1000×.
+For one serial step, dilution factor DF = C_before / C_after. For constant-ratio series, DF is the same at every step. Total fold-change after n steps is DF^n. Example: 10 mM to 10 µM is a 1000× total change; with DF = 10 per step, three serial steps achieve 10³ = 1000×.
 
 ### What is C1V1 = C2V2?
 
@@ -398,3 +398,5 @@ how to perform a serial dilution in the lab, how to calculate serial dilution st
 # Contributing
 
 Clone [https://github.com/pepkio/pepkio-serial-dilution-planner](https://github.com/pepkio/pepkio-serial-dilution-planner), run `uv sync`, and execute `uv run pytest` for unit and integration tests. Integration tests require `PEPKIO_API_KEY` or `LOCAL_PEPKIO_API_KEY` in the environment.
+
+A semantic, AI-native version of this document in the K2F format is available at https://k2f.dev (https://k2f.dev/v/b888c91cee987778f7359b3f614c9eb84795b2dbfcb9e199a91f5cc2af62b06b)
